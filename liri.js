@@ -1,3 +1,13 @@
+var fs = require("fs");
+
+fs.writeFile("random.txt","spotify-this-song, I Want It That Way", function(err) {
+
+  if (err) {
+    return console.log(err);
+  }
+
+  console.log("random.txt was updated!");
+});
 
 // import modules and packages
 const request = require("request");
